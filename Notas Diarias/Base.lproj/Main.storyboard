@@ -34,8 +34,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Notas Diarias" id="9GG-ko-zpr">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SE9-MX-nFs">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="SE9-MX-nFs">
+                            <color key="tintColor" red="0.085386164486408234" green="0.48004096746444702" blue="0.99892288446426392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="Ide-0u-Jjf" kind="show" identifier="irNotas" id="onT-Gv-xcz"/>
                             </connections>
@@ -69,7 +69,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zvM-c1-BOo">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.13592512093122633" green="1" blue="0.097974506367646375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
