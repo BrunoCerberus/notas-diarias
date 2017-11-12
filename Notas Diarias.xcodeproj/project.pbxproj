@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		ECE225171FB89DBA00A96811 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE225161FB89DBA00A96811 /* AppDelegate.swift */; };
-		ECE225191FB89DBA00A96811 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE225181FB89DBA00A96811 /* ViewController.swift */; };
+		ECE225191FB89DBA00A96811 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE225181FB89DBA00A96811 /* TableViewController.swift */; };
 		ECE2251C1FB89DBA00A96811 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE2251A1FB89DBA00A96811 /* Main.storyboard */; };
 		ECE2251F1FB89DBA00A96811 /* Notas_Diarias.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECE2251D1FB89DBA00A96811 /* Notas_Diarias.xcdatamodeld */; };
 		ECE225211FB89DBA00A96811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECE225201FB89DBA00A96811 /* Assets.xcassets */; };
 		ECE225241FB89DBA00A96811 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE225221FB89DBA00A96811 /* LaunchScreen.storyboard */; };
+		ECE2252C1FB89EB300A96811 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE2252B1FB89EB300A96811 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ECE225131FB89DBA00A96811 /* Notas Diarias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notas Diarias.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE225161FB89DBA00A96811 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECE225181FB89DBA00A96811 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECE225181FB89DBA00A96811 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		ECE2251B1FB89DBA00A96811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECE2251E1FB89DBA00A96811 /* Notas_Diarias.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notas_Diarias.xcdatamodel; sourceTree = "<group>"; };
 		ECE225201FB89DBA00A96811 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECE225231FB89DBA00A96811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECE225251FB89DBA00A96811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE2252B1FB89EB300A96811 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				ECE225161FB89DBA00A96811 /* AppDelegate.swift */,
-				ECE225181FB89DBA00A96811 /* ViewController.swift */,
+				ECE225181FB89DBA00A96811 /* TableViewController.swift */,
+				ECE2252B1FB89EB300A96811 /* ViewController.swift */,
 				ECE2251A1FB89DBA00A96811 /* Main.storyboard */,
 				ECE225201FB89DBA00A96811 /* Assets.xcassets */,
 				ECE225221FB89DBA00A96811 /* LaunchScreen.storyboard */,
@@ -140,7 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECE2251F1FB89DBA00A96811 /* Notas_Diarias.xcdatamodeld in Sources */,
-				ECE225191FB89DBA00A96811 /* ViewController.swift in Sources */,
+				ECE225191FB89DBA00A96811 /* TableViewController.swift in Sources */,
+				ECE2252C1FB89EB300A96811 /* ViewController.swift in Sources */,
 				ECE225171FB89DBA00A96811 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

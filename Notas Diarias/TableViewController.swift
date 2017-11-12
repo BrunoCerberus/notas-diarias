@@ -8,13 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    
+class TableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         
-        self.title = "Notas"
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -22,4 +29,7 @@ class ViewController: UIViewController {
             return true
         }
     }
+
+
 }
+
