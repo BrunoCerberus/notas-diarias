@@ -13,18 +13,34 @@
         <!--Notas Diarias-->
         <scene sceneID="cAx-P6-JhQ">
             <objects>
-                <tableViewController id="KoG-3I-51j" customClass="TableViewController" customModule="Notas_Diarias" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="KoG-3I-51j" customClass="ListarAnotacoesTableViewController" customModule="Notas_Diarias" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kWf-x0-JEh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseCell" id="t2u-Z3-ZqA">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseCell" textLabel="j0r-ti-nXS" detailTextLabel="qDh-4t-8aU" style="IBUITableViewCellStyleSubtitle" id="t2u-Z3-ZqA">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t2u-Z3-ZqA" id="0C4-jB-tx3">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j0r-ti-nXS">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qDh-4t-8aU">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -34,10 +50,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Notas Diarias" id="9GG-ko-zpr">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SE9-MX-nFs">
-                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Nxn-DU-7nn">
                             <connections>
-                                <segue destination="uFh-5B-dBz" kind="show" id="DWv-Qc-SW7"/>
+                                <segue destination="uFh-5B-dBz" kind="show" identifier="verAnotacao" id="RSI-rT-D9Q"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -49,7 +64,7 @@
         <!--Adicionar-->
         <scene sceneID="o8u-1h-EFH">
             <objects>
-                <viewController id="uFh-5B-dBz" sceneMemberID="viewController">
+                <viewController id="uFh-5B-dBz" customClass="AnotacaoViewController" customModule="Notas_Diarias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uEN-f5-9Iq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,8 +87,15 @@
                         <viewLayoutGuide key="safeArea" id="ceT-sP-enm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Adicionar" id="JF7-4U-BQ1">
-                        <barButtonItem key="rightBarButtonItem" title="Salvar" style="plain" id="s2W-Rq-ipB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="s2W-Rq-ipB">
+                            <connections>
+                                <action selector="salvar:" destination="uFh-5B-dBz" id="UJG-7v-lT4"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="texto" destination="9nV-nG-4Wg" id="v8n-ko-piD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIZ-OU-LUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

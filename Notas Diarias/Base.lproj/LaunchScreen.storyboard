@@ -22,7 +22,6 @@
                                 <rect key="frame" x="101.5" y="315.5" width="171.5" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="LmN-68-qm9"/>
-                                    <constraint firstAttribute="width" constant="171.5" id="W1w-kV-NaI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
